@@ -9,9 +9,19 @@
 # Input: 20 21 22(ввод чисел НЕ в одну строку)
 # Output: 32
 
-first_cr = 21
+# first_cr = 21
+# second_cr = 21
+# third_cr = 21
+# print((first_cr + 1) // 2 +
+#       (second_cr + 1) // 2 +
+#       (third_cr + 1) // 2)
+
+from math import ceil
+
+first_cr = 20
 second_cr = 21
-third_cr = 21
-print((first_cr + 1) // 2 +
-      (second_cr + 1) // 2 +
-      (third_cr + 1) // 2)
+third_cr = 22
+print(ceil(first_cr / 2) +
+      ceil(second_cr / 2) +
+      ceil(third_cr / 2))
+
