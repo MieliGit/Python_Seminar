@@ -16,7 +16,7 @@
 #       (second_cr + 1) // 2 +
 #       (third_cr + 1) // 2)
 
-from math import ceil
+from math import ceil #Для вызова определенного метода из биьлиотекию В данном случае Ceil
 
 first_cr = 20
 second_cr = 21
