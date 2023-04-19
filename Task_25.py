@@ -6,20 +6,32 @@
 
 # Для решения данной задачи используйте функцию .split()
 
-from random import randint
-s = input('введите количество элементов в массиве и диапазон от и до через пробел: ').split()
+# from random import randint
+# s = input('введите количество элементов в массиве и диапазон от и до через пробел: ').split()
 
-d = {}
+# d = {}
 
-for el in s:
-    d[el] = 0
+# for el in s:
+#     d[el] = 0
 
-sout = []
-for el in s:
-    if d[el] == 0:
-        sout.append(el)
-        d[el] += 1
+# sout = []
+# for el in s:
+#     if d[el] == 0:
+#         sout.append(el)
+#         d[el] += 1
+#     else:
+#         sout.append(f'{el}_{d[el]}')
+#         d[el] += 1
+# print(*sout)
+
+text = input('Введите строку: ').split()
+
+count = {}
+
+for letter in text:
+    if letter not in count:
+        print(f'{letter}', end=' ')
     else:
-        sout.append(f'{el}_{d[el]}')
-        d[el] += 1
-print(*sout)
+        print(f'{letter}_{count[letter]}', end=" ")
+
+    count[letter] = count.get(letter, 0) + 1
